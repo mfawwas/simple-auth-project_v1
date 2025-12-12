@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const DB_URI = process.env.DB_URI || 'mongodb://localhost:27017/foodrepublic';
+const DB_URI = process.env.DB_URI;
 
 const connectDB = async () => {
     try {
